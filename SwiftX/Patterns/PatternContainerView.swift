@@ -19,6 +19,8 @@ struct PatternContainerView: View {
                 }
                 Text(uuid.uuidString)
                     .hidden()
+                Text(pattern.notes)
+                    .padding(.horizontal, 16)
             }
         }
     }

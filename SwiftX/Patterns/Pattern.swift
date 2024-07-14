@@ -2,11 +2,12 @@ import SwiftUI
 
 enum Pattern: String, Identifiable, CaseIterable {
     case stateObject = "StateObject"
-    case observableObject = "ObservableObject"
+    case observedObject = "ObservedObject"
     case state = "State (iOS 17)"
     case modelPublisher = "Model Publisher"
     case propertyWrapper = "Property Wrapper"
     case propertyWrapperWithState = "Property Wrapper With State"
+    case tca = "The Composable Architecture"
     
     var id: String { rawValue }
 }
@@ -17,8 +18,8 @@ extension Pattern {
         switch self {
         case .stateObject:
             StateObjectView()
-        case .observableObject:
-            ObservableObjectView()
+        case .observedObject:
+            ObservedObjectView()
         case .state:
             StateView()
         case .modelPublisher:
@@ -29,6 +30,8 @@ extension Pattern {
             PresenterOwningView(presenter: PresenterWrapperFactory.presenter) {
                 PresenterWrapperView(presenter: $0)
             }
+        case .tca:
+            TCAView()
         }
     }
     
@@ -36,7 +39,7 @@ extension Pattern {
         switch self {
         case .stateObject:
             return "Standard ViewModel pattern. It does not support using a fake presenter due to the associated type on ObservableObject."
-        case .observableObject:
+        case .observedObject:
             return "@StateObject was introduced iOS 14.0. @ObservableObject suffers the same issues in addition to the presenter not being owned by view."
         case .state:
             return "@Observable was introduced in iOS 17.0 which allows @State to work with reference types. Solves the fake issue of @StateObject"
@@ -46,6 +49,8 @@ extension Pattern {
             return "Custom property wrapper that imitates @ObservedObject using type erasure. Does not take ownership of the presenter."
         case .propertyWrapperWithState:
             return "Wraps the property wrapper example so that the presenter is owned."
+        case .tca:
+            return ""
         }
     }
 }

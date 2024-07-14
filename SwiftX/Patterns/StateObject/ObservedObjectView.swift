@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct ObservableObjectView: View {
+struct ObservedObjectView: View {
     
     // Reusing the StateObject presenter since the patterns are the same
     // @ObservableObject does not take ownership

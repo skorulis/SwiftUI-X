@@ -12,7 +12,7 @@
 		FAD92A0F2C41EBDA00B86690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD92A0E2C41EBDA00B86690 /* Assets.xcassets */; };
 		FAD92A122C41EBDA00B86690 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD92A112C41EBDA00B86690 /* Preview Assets.xcassets */; };
 		FAD92A1B2C41ECF900B86690 /* StateObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD92A1A2C41ECF900B86690 /* StateObjectView.swift */; };
-		FAD92A1D2C41EF4500B86690 /* ObservableObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD92A1C2C41EF4500B86690 /* ObservableObjectView.swift */; };
+		FAD92A1D2C41EF4500B86690 /* ObservedObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD92A1C2C41EF4500B86690 /* ObservedObjectView.swift */; };
 		FAD92A1F2C41EFCE00B86690 /* PatternContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD92A1E2C41EFCE00B86690 /* PatternContainerView.swift */; };
 		FAD92A222C41F17C00B86690 /* ModelPublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD92A212C41F17C00B86690 /* ModelPublisherView.swift */; };
 		FAD92A252C4271EC00B86690 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD92A242C4271EC00B86690 /* StateView.swift */; };
@@ -21,6 +21,8 @@
 		FAD92A2C2C4345B100B86690 /* ErasedObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD92A2B2C4345B100B86690 /* ErasedObservableObject.swift */; };
 		FAD92A2E2C4345CA00B86690 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD92A2D2C4345CA00B86690 /* Store.swift */; };
 		FAD92A302C4345F800B86690 /* PresenterWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD92A2F2C4345F800B86690 /* PresenterWrapperView.swift */; };
+		FAD92A332C434E4700B86690 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FAD92A322C434E4700B86690 /* ComposableArchitecture */; };
+		FAD92A362C434EAA00B86690 /* TCAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD92A352C434EAA00B86690 /* TCAView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +32,7 @@
 		FAD92A0E2C41EBDA00B86690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD92A112C41EBDA00B86690 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAD92A1A2C41ECF900B86690 /* StateObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectView.swift; sourceTree = "<group>"; };
-		FAD92A1C2C41EF4500B86690 /* ObservableObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectView.swift; sourceTree = "<group>"; };
+		FAD92A1C2C41EF4500B86690 /* ObservedObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectView.swift; sourceTree = "<group>"; };
 		FAD92A1E2C41EFCE00B86690 /* PatternContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternContainerView.swift; sourceTree = "<group>"; };
 		FAD92A212C41F17C00B86690 /* ModelPublisherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPublisherView.swift; sourceTree = "<group>"; };
 		FAD92A242C4271EC00B86690 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 		FAD92A2B2C4345B100B86690 /* ErasedObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErasedObservableObject.swift; sourceTree = "<group>"; };
 		FAD92A2D2C4345CA00B86690 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		FAD92A2F2C4345F800B86690 /* PresenterWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterWrapperView.swift; sourceTree = "<group>"; };
+		FAD92A352C434EAA00B86690 /* TCAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD92A332C434E4700B86690 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD92A1A2C41ECF900B86690 /* StateObjectView.swift */,
-				FAD92A1C2C41EF4500B86690 /* ObservableObjectView.swift */,
+				FAD92A1C2C41EF4500B86690 /* ObservedObjectView.swift */,
 			);
 			path = StateObject;
 			sourceTree = "<group>";
@@ -100,6 +104,7 @@
 		FAD92A192C41EBFD00B86690 /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				FAD92A342C434E9600B86690 /* TCA */,
 				FAD92A282C42786E00B86690 /* Presenter */,
 				FAD92A232C42033300B86690 /* State */,
 				FAD92A202C41F17300B86690 /* ModelPublisher */,
@@ -137,6 +142,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		FAD92A342C434E9600B86690 /* TCA */ = {
+			isa = PBXGroup;
+			children = (
+				FAD92A352C434EAA00B86690 /* TCAView.swift */,
+			);
+			path = TCA;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +166,9 @@
 			dependencies = (
 			);
 			name = SwiftX;
+			packageProductDependencies = (
+				FAD92A322C434E4700B86690 /* ComposableArchitecture */,
+			);
 			productName = SwiftX;
 			productReference = FAD92A072C41EBD900B86690 /* SwiftX.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +197,9 @@
 				Base,
 			);
 			mainGroup = FAD929FE2C41EBD900B86690;
+			packageReferences = (
+				FAD92A312C434E4700B86690 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = FAD92A082C41EBD900B86690 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -207,9 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD92A1D2C41EF4500B86690 /* ObservableObjectView.swift in Sources */,
+				FAD92A1D2C41EF4500B86690 /* ObservedObjectView.swift in Sources */,
 				FAD92A2C2C4345B100B86690 /* ErasedObservableObject.swift in Sources */,
 				FAD92A252C4271EC00B86690 /* StateView.swift in Sources */,
+				FAD92A362C434EAA00B86690 /* TCAView.swift in Sources */,
 				FAD92A2A2C43459400B86690 /* AnyObservableObject.swift in Sources */,
 				FAD92A0D2C41EBD900B86690 /* ContentView.swift in Sources */,
 				FAD92A302C4345F800B86690 /* PresenterWrapperView.swift in Sources */,
@@ -424,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAD92A312C434E4700B86690 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAD92A322C434E4700B86690 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAD92A312C434E4700B86690 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAD929FF2C41EBD900B86690 /* Project object */;
 }
